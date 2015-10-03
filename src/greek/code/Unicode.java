@@ -59,7 +59,7 @@ public class Unicode {
 				if(!(g.hasAccent() || g.hasBreathing() || g.hasIotaSubscript() ||
 					(g.hasMacron() && g.hasBreve()) || g.hasDiaeresis())) {
 					if(g.hasMacron()) return 0x00AF; // macron
-					else return 0x02DB; // breve
+					else return 0x02D8; // breve
 				}
 			}
 			else if(g.hasIotaSubscript()) { // iota subscripts
