@@ -337,7 +337,7 @@ public class Unicode {
 	}
 
 	private static Glyph baseLetterOf(char u) {
-		if(u <= 0x0391 && u <= 0x03A9 || u >= 0x03B1 && u <= 0x03C9) {
+		if(u >= 0x0391 && u <= 0x03A9 || u >= 0x03B1 && u <= 0x03C9) {
 			int p = u - 0x0391 - (u >= 0x03B1 ? 0x20 : 0);
 			if(p > 17) --p;
 			return Glyph.values()[p];
